@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style.css" />  
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" 
+    crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" 
+	crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" 
+	rel="stylesheet"> 
+    <title>Title of the document</title>
+</head>
+
+<body>
+	<div class="menus">
+		<nav id="sidebar">
+			<div class="toggle-btn" onclick="toggleSidebar(this)">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div> 
+			<div class="sidebar-top">
+				<h3><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-share-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+				  </svg>Modellek</h3>
+			</div>
+			<div class="list">
+				<div class="item"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-newspaper" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z"/>
+					<path d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"/>
+				  </svg>Hetilap</div>
+				<div class="item"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-globe" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4H2.255a7.025 7.025 0 0 1 3.072-2.472 6.7 6.7 0 0 0-.597.933c-.247.464-.462.98-.64 1.539zm-.582 3.5h-2.49c.062-.89.291-1.733.656-2.5H3.82a13.652 13.652 0 0 0-.312 2.5zM4.847 5H7.5v2.5H4.51A12.5 12.5 0 0 1 4.846 5zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5H7.5V11H4.847a12.5 12.5 0 0 1-.338-2.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12H7.5v2.923c-.67-.204-1.335-.82-1.887-1.855A7.97 7.97 0 0 1 5.145 12zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11H1.674a6.958 6.958 0 0 1-.656-2.5h2.49c.03.877.138 1.718.312 2.5zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12h2.355a7.967 7.967 0 0 1-.468 1.068c-.552 1.035-1.218 1.65-1.887 1.855V12zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5h-2.49A13.65 13.65 0 0 0 12.18 5h2.146c.365.767.594 1.61.656 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4H8.5V1.077c.67.204 1.335.82 1.887 1.855.173.324.33.682.468 1.068z"/>
+				  </svg>Online</div>
+				<div class="item"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link-45deg" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+					<path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z"/>
+				  </svg>Hetilap + Online</div>
+				<div class="sidebar-header">
+					<div class="item"><h3><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-tags-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" d="M3 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 7.586 1H3zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+						<path d="M1 7.086a1 1 0 0 0 .293.707L8.75 15.25l-.043.043a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 0 7.586V3a1 1 0 0 1 1-1v5.086z"/>
+					  </svg>Demó</h3></div>
+				</div>
+				<div class="item"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-lines-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7 1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm2 9a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+				  </svg>Cimkéző</div>
+				<div class="item"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-gear-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 0 0-5.86 2.929 2.929 0 0 0 0 5.858z"/>
+				  </svg>Tanító</div>
+			</div>
+		</nav>
+
+		<div class="container-fluid content pt-2 px-4">
+			<h1>címkeajánló - HETILAP</h1>
+			<form action="">
+			  <div class="form-row">
+				<div class="form-group col-10">
+				  <label for="">Cikkek Listaja:</label>
+				  <select id="title" class="form-control">
+					
+				  </select>
+				</div>
+				<div class="btn-group col-2">
+					<button id="btn-scroll-start" type="button" class="btn btn-secondary"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-double-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+						<path fill-rule="evenodd" d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+					  </svg></button>
+					<button id="btn-scroll-prev" type="button" class="btn btn-secondary"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-compact-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223z"/>
+					  </svg></button>
+				  <button id="btn-scroll-next" type="button" class="btn btn-secondary"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-compact-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+				  </svg></button>
+				  <button id="btn-scroll-end" type="button" class="btn btn-secondary"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-double-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+					<path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+				  </svg></button>
+				</div>
+			  </div>
+			</form>
+	
+			<form action="">
+			  <div class="form-row">
+				<div class="form-group col-10">
+				  <div class="prob">
+					<label for="formControlRange"
+					  >Valószínűség: 0.8<span id="range-value"></span
+					></label>
+					<div><input id="min" type="checkbox" /><label>min. 3</label></div>
+				  </div>
+	
+				  <input type="range"
+					class="form-control-range"
+					id="formControlRange"
+					min="0"
+					max="1"
+					step="0.01"/>
+				</div>
+				<div class="form-group col-2 d-flex flex-column pt-1">
+				  <label for="formControlRange">P: <span>0.766</span></label>
+				  <label for="formControlRange">R: <span>0.318</span></label>
+				</div>
+			  </div>
+			</form>
+	
+			<div class="row container-response">
+				<div class="col-6">
+				  <div class="card h-100">
+					<h5 class="card-header">Cikk szövege:</h5>
+					<div class="card-body">
+					  <p id="text-content" class="card-text">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+						when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+						It has survived not only five centuries, but also the leap into electronic typesetting, 
+						remaining essentially unchanged.
+					  </p>
+					</div>
+				  </div>
+				</div>
+	
+			  <div class="col-6">
+				<div class="row mb-4">
+				  <div class="col-12">
+					<div class="card w-100 h-100 container-card-left">
+					  <div class="title-duo">
+						<h5 class="card-header title-top">Eredeti címkék</h5>
+						<h5 class="card-header title-top">Ajánlott címkék</h5>
+					  </div>
+	
+					  <div class="card-body list-duo">
+						<ul id="original-labels" class="list-top">
+							Lorem ipsum dolor sit amet.
+						</ul>
+						<ul id="recommended-labels" class="list-top">
+							Lorem ipsum dolor sit amet.
+						</ul>
+					  </div>
+					</div>
+				  </div>
+				</div>
+	
+				<div class="row mb-4">
+				  <div class="col-12">
+					<div class="card w-100 h-100 container-card-left">
+					  <div class="title-duo">
+						<h5 class="card-header title-bottom">Eredeti címkék (egyéb)</h5>
+						<h5 class="card-header title-bottom">Ajánlott címkék (egyéb)</h5>
+					  </div>
+	
+					  <div class="card-body list-duo">
+						<ul id="original-spec-labels" class="list-bottom">
+							
+						</ul>
+						<ul id="recommended-spec-labels" class="list-bottom">
+							
+						</ul>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+
+			  <div class="col-12 mt-4">
+				<div class="row">
+				  <div class="col-3">
+					<div class="card w-100 h-100">
+					  <div class="card-body container-data">
+						<div class="list-data">
+						  <h5 class="card-title mb-1">Hetilap</h5>
+						  <ul>
+							<li>cikk: <span>110 ezer</span></li>
+							<li>címke: <span>1023 db</span></li>
+							<li>token: <span>73 millió</span></li>
+							<li>type: <span>62 ezer</span></li>
+						  </ul>
+						</div>
+						<i class="fas fa-3x fa-clipboard-list"></i>
+					  </div>
+					</div>
+				  </div>
+	  
+				  <div class="col-3">
+					<div class="card w-100 h-100">
+					  <div class="card-body container-data">
+						<div class="list-data">
+						  <h5 class="card-title mb-1">Hetilap +</h5>
+						  <ul>
+							<li>cikk: <span>110 ezer</span></li>
+							<li>címke: <span>26901 db</span></li>
+							<li>token: <span>73 millió</span></li>
+							<li>type: <span>36 ezer</span></li>
+						  </ul>
+						</div>
+						<i class="fas fa-3x fa-clipboard-list"></i>
+					  </div>
+					</div>
+				  </div>
+	  
+				  <div class="col-3">
+					<div class="card w-100 h-100">
+					  <div class="card-body container-data">
+						<div class="list-data">
+						  <h5 class="card-title mb-1">Online</h5>
+						  <ul>
+							<li>cikk: <span>80 ezer</span></li>
+							<li>címke: <span>76654 db</span></li>
+							<li>token: <span>35 millió</span></li>
+							<li>type: <span>33 ezer</span></li>
+						  </ul>
+						</div>
+						<i class="fas fa-3x fa-clipboard-list"></i>
+					  </div>
+					</div>
+				  </div>
+	  
+				  <div class="col-3">
+					<div class="card w-100 h-100">
+					  <div class="card-body container-data">
+						<div class="list-data">
+						  <h5 class="card-title mb-1">Hetilap + Online</h5>
+						  <ul>
+							<li>cikk: <span>195 ezer</span></li>
+							<li>címke: <span>104432 db</span></li>
+							<li>token: <span>112 millió</span></li>
+							<li>type: <span>38 ezer</span></li>
+						  </ul>
+						</div>
+						<i class="fas fa-3x fa-clipboard-list"></i>
+					  </div>
+					</div>
+				  </div>
+				</div>
+
+			  </div>
+			  <footer>Project 2019</footer>
+			</div>
+	</div>
+</body>
+
+</html> 
+
+
+<script>
+	function toggleSidebar(ref){
+	  document.getElementById("menus").classList.toggle('active');
+	}
+</script>
